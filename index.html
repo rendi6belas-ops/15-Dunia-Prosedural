@@ -1,1 +1,109 @@
-
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>15 Dunia Prosedural</title>
+<style>
+  :root{color-scheme:dark}
+  *{box-sizing:border-box}
+  body{margin:0;min-height:100vh;padding:clamp(28px,6vw,80px);background:#05070a;color:#eef4f8;
+    font:400 16px/1.6 ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+    background-image:radial-gradient(900px 500px at 12% -10%,#0d2233,transparent 70%),radial-gradient(700px 400px at 100% 110%,#1a0f24,transparent 70%)}
+  h1{margin:0 0 .2em;font:800 clamp(28px,4.4vw,52px)/1.02 ui-sans-serif,system-ui,sans-serif;letter-spacing:-.03em}
+  .lead{max-width:56ch;margin:0 0 clamp(24px,4vh,44px);color:#9fb2c0}
+  .lead code{font:500 .85em ui-monospace,Menlo,monospace;background:#ffffff12;padding:.1em .4em;border-radius:4px}
+  .grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));max-width:1100px}
+  .card{position:relative;display:grid;gap:.25em;padding:18px 18px 16px;border-radius:12px;text-decoration:none;
+    color:inherit;background:#ffffff08;box-shadow:inset 0 0 0 1px #ffffff14;transition:transform .18s,background .18s,box-shadow .18s}
+  .card:hover{transform:translateY(-2px);background:#ffffff10;box-shadow:inset 0 0 0 1px var(--ac),0 14px 40px #0008}
+  .card .n{font:600 10px/1 ui-monospace,Menlo,monospace;letter-spacing:.3em;color:var(--ac)}
+  .card .t{font:700 18px/1.25 ui-sans-serif,system-ui,sans-serif;letter-spacing:-.01em}
+  .card .d{font:500 10.5px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:#8497a4}
+  footer{margin-top:clamp(28px,5vh,52px);font:500 11px/1.7 ui-monospace,Menlo,monospace;letter-spacing:.1em;color:#66798a}
+</style>
+</head>
+<body>
+  <h1>15 dunia prosedural</h1>
+  <p class="lead">Setiap berkas HTML berdiri sendiri: satu dunia, satu shader raymarching, tanpa dependensi.
+    Buka langsung di peramban, atau lihat daftarnya di sini.</p>
+  <div class="grid">
+    <a class="card" href="./europa.html" style="--ac:#8fd8ff">
+      <span class="n">01</span>
+      <span class="t">Europa</span>
+      <span class="d">Bulan es · Jupiter</span>
+    </a>
+    <a class="card" href="./mars.html" style="--ac:#ff9a63">
+      <span class="n">02</span>
+      <span class="t">Mars</span>
+      <span class="d">Gurun · Planet merah</span>
+    </a>
+    <a class="card" href="./gasgiant.html" style="--ac:#f0b46a">
+      <span class="n">03</span>
+      <span class="t">Di Dalam Raksasa Gas</span>
+      <span class="d">Atmosfer · Raksasa gas</span>
+    </a>
+    <a class="card" href="./orbit.html" style="--ac:#bcd7ff">
+      <span class="n">04</span>
+      <span class="t">Orbit</span>
+      <span class="d">Orbit · Cincin es</span>
+    </a>
+    <a class="card" href="./rainforest.html" style="--ac:#c9e88a">
+      <span class="n">05</span>
+      <span class="t">Kanopi</span>
+      <span class="d">Hutan hujan · Subuh</span>
+    </a>
+    <a class="card" href="./desert.html" style="--ac:#ffd08a">
+      <span class="n">06</span>
+      <span class="t">Mirage</span>
+      <span class="d">Gurun · Oasis</span>
+    </a>
+    <a class="card" href="./glacier.html" style="--ac:#a8c8e8">
+      <span class="n">07</span>
+      <span class="t">Lembah Glasial</span>
+      <span class="d">Pegunungan · Salju</span>
+    </a>
+    <a class="card" href="./crystalcave.html" style="--ac:#7fe6e0">
+      <span class="n">08</span>
+      <span class="t">Gua Kristal</span>
+      <span class="d">Gua · Kristal</span>
+    </a>
+    <a class="card" href="./volcano.html" style="--ac:#ff8a4c">
+      <span class="n">09</span>
+      <span class="t">Bara</span>
+      <span class="d">Vulkanik · Lava</span>
+    </a>
+    <a class="card" href="./reef.html" style="--ac:#5fe0d0">
+      <span class="n">10</span>
+      <span class="t">Terumbu</span>
+      <span class="d">Laut dangkal · Terumbu</span>
+    </a>
+    <a class="card" href="./underice.html" style="--ac:#9ad4f0">
+      <span class="n">11</span>
+      <span class="t">Di Bawah Lapisan Es</span>
+      <span class="d">Bawah es · Kutub</span>
+    </a>
+    <a class="card" href="./sunken.html" style="--ac:#7fc8a8">
+      <span class="n">12</span>
+      <span class="t">Kota Tenggelam</span>
+      <span class="d">Reruntuhan · Kota tenggelam</span>
+    </a>
+    <a class="card" href="./cathedral.html" style="--ac:#e0b07a">
+      <span class="n">13</span>
+      <span class="t">Nave</span>
+      <span class="d">Arsitektur · Katedral</span>
+    </a>
+    <a class="card" href="./neoncity.html" style="--ac:#ff6ec7">
+      <span class="n">14</span>
+      <span class="t">Gang Neon</span>
+      <span class="d">Kota · Hujan malam</span>
+    </a>
+    <a class="card" href="./micro.html" style="--ac:#88e6b0">
+      <span class="n">15</span>
+      <span class="t">Setetes Air</span>
+      <span class="d">Mikroskopis · Setetes air</span>
+    </a>
+  </div>
+  <footer>WebGL2 · raymarching SDF · prosedural penuh · drag untuk melihat, WASD untuk bergerak</footer>
+</body>
+</html>
